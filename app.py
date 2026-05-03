@@ -2,10 +2,6 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-import sklearn
-
-print(f"Scikit-learn version: {sklearn.__version__}")
-
 model = joblib.load("house_price_model.pkl")
 
 st.title("🏠 House Price Predictor")
